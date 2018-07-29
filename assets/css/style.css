@@ -226,6 +226,10 @@ header .hero-text-box {
 }
 
 /**************** HOW IT WORKS *******************/
+#how-it-works {
+  background-color: #f4f4f4;
+}
+
 #how-it-works .step-box {
   margin-top: 20px;
 }
