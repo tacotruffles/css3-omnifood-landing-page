@@ -1,3 +1,5 @@
+/**************** VARIABLES *******************/
+/**************** RESET *******************/
 * {
   margin: 0;
   padding: 0;
@@ -13,4 +15,35 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/**************** HEADER *******************/
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/css/img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/css/img/hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header .hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/**************** HEADER *******************/
+/**************** HEADER *******************/
 /*# sourceMappingURL=style.css.map */

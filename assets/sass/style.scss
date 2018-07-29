@@ -1,3 +1,7 @@
+/**************** VARIABLES *******************/
+$row-width: 1140px;
+
+/**************** RESET *******************/
 * {
    margin: 0;
    padding: 0;
@@ -12,3 +16,33 @@ html {
    font-weight: 300;
    text-rendering: optimizeLegibility;
 }
+
+// Initialize Grid Width and Center
+.row {
+   max-width: $row-width;
+   margin: 0 auto;
+}
+
+/**************** HEADER *******************/
+header {
+   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) , url(/assets/css/img/hero.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 100vh;
+
+   h1 {
+      margin: 0;
+   }
+
+   .hero-text-box {
+      position: absolute;
+      width: $row-width;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
+}
+
+/**************** HEADER *******************/
+/**************** HEADER *******************/
