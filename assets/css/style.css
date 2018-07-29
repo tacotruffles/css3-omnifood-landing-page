@@ -28,6 +28,15 @@ html {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-right: 15px;
+}
+
+.btn:hover, .btn:active {
+  color: white !important;
+  background-color: #cf6d17 !important;
+  border: 1px solid #e67e22 !important;
 }
 
 .btn.btn-full:link, .btn.btn-full:visited {
