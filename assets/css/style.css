@@ -284,6 +284,11 @@ header .hero-text-box {
   padding-bottom: 5px;
 }
 
-/**************** HEADER *******************/
+/**************** LOCATIONS *******************/
+#locations img {
+  width: 98%;
+  height: auto;
+}
+
 /**************** HEADER *******************/
 /*# sourceMappingURL=style.css.map */
