@@ -170,7 +170,15 @@ header .hero-text-box {
 }
 
 /**************** FEATURES *******************/
+#features .lead {
+  margin-bottom: 35px;
+}
+
 /**************** MEALS *******************/
+#meals {
+  padding: 0;
+}
+
 #meals .meals-showcase {
   list-style: none;
   width: 100%;
@@ -185,18 +193,24 @@ header .hero-text-box {
 #meals .meals-showcase li .meal-pic {
   width: 100%;
   margin: 0;
+  overflow: hidden;
+  background-color: #000;
 }
 
 #meals .meals-showcase li .meal-pic img {
+  opacity: .7;
   width: 100%;
   height: auto;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 #meals .meals-showcase li .meal-pic img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  opacity: 1;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 /**************** HEADER *******************/

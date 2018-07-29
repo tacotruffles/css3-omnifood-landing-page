@@ -193,10 +193,16 @@ header {
 }
 
 /**************** FEATURES *******************/
-// none
+#features {
+   .lead {
+      margin-bottom: 35px;
+   }
+}
 
 /**************** MEALS *******************/
 #meals {
+   padding: 0;
+
    .meals-showcase {
       list-style: none;
       width: 100%;
@@ -209,14 +215,20 @@ header {
          .meal-pic {
             width: 100%;
             margin: 0;
+            overflow: hidden;
+            background-color: #000;
 
             img {
+               
+               opacity: .7;
                width: 100%;
                height: auto;
-               transition: all .3s;
+               transform: scale(1.15);
+               transition: all .5s;
 
                &:hover {
-                  transform: scale(1.1);
+                  opacity: 1;
+                  transform: scale(1.04);
                }
             }
          }
