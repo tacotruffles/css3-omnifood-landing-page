@@ -302,6 +302,11 @@ header {
          display: inline-block;
          padding-top: 80px;
 
+         &:link,
+         &:visited {
+            border: 0;
+         }
+
          img {
             height: 50px;
             width: auto;
