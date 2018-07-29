@@ -34,6 +34,19 @@ html {
    margin: 0 auto;
 }
 
+// Clear fix 
+.clearfix {
+   zoom: 1;
+
+   &:after {
+      content: '.';
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+   }
+}
+
 /**************** COMMON *******************/
 // Buttons
 .btn {
@@ -228,7 +241,7 @@ header {
 
                &:hover {
                   opacity: 1;
-                  transform: scale(1.04);
+                  transform: scale(1.05);
                }
             }
          }
@@ -238,7 +251,62 @@ header {
 
 /**************** HOW IT WORKS *******************/
 #how-it-works {
-   
+
+   .step-box {
+      margin-top: 20px;
+
+      &:first-child {
+         text-align: right;
+         padding-right: 3%;
+      }
+
+      &:last-child {
+         padding-left: 3%;
+      }
+
+      .btn-app {
+         display: inline-block;
+         padding-top: 80px;
+
+         img {
+            height: 50px;
+            width: auto;
+         }
+      }
+   }
+
+   .app-screen {
+      width: 40%;
+      height: auto;
+   }
+
+   .step {
+      margin-top: 35px;
+
+      // Step number
+      div {
+         display: inline-block;
+         color: $color-orange;
+         border: 2px solid $color-orange;
+         border-radius: 50%;
+         height: 55px;
+         width: 55px;
+         text-align: center;
+         padding: 9px;
+         float: left;
+         font-size: 150%; 
+         margin-right: 25px;
+      }
+
+      p {
+         padding-top: 5px;
+
+         &:last-of-type {
+            padding-bottom: 5px;
+         }
+      }
+      
+   }
 }
 /**************** HEADER *******************/
 /**************** HEADER *******************/

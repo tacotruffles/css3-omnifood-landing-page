@@ -21,6 +21,18 @@ html {
   margin: 0 auto;
 }
 
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /**************** COMMON *******************/
 .btn:link, .btn:visited {
   display: inline-block;
@@ -209,11 +221,65 @@ header .hero-text-box {
 
 #meals .meals-showcase li .meal-pic img:hover {
   opacity: 1;
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 /**************** HOW IT WORKS *******************/
+#how-it-works .step-box {
+  margin-top: 20px;
+}
+
+#how-it-works .step-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
+#how-it-works .step-box:last-child {
+  padding-left: 3%;
+}
+
+#how-it-works .step-box .btn-app {
+  display: inline-block;
+  padding-top: 80px;
+}
+
+#how-it-works .step-box .btn-app img {
+  height: 50px;
+  width: auto;
+}
+
+#how-it-works .app-screen {
+  width: 40%;
+  height: auto;
+}
+
+#how-it-works .step {
+  margin-top: 35px;
+}
+
+#how-it-works .step div {
+  display: inline-block;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 9px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+#how-it-works .step p {
+  padding-top: 5px;
+}
+
+#how-it-works .step p:last-of-type {
+  padding-bottom: 5px;
+}
+
 /**************** HEADER *******************/
 /**************** HEADER *******************/
 /*# sourceMappingURL=style.css.map */
