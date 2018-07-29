@@ -170,5 +170,36 @@ header .hero-text-box {
 }
 
 /**************** FEATURES *******************/
+/**************** MEALS *******************/
+#meals .meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+#meals .meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+#meals .meals-showcase li .meal-pic {
+  width: 100%;
+  margin: 0;
+}
+
+#meals .meals-showcase li .meal-pic img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#meals .meals-showcase li .meal-pic img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/**************** HEADER *******************/
+/**************** HEADER *******************/
 /**************** HEADER *******************/
 /*# sourceMappingURL=style.css.map */

@@ -193,7 +193,37 @@ header {
 }
 
 /**************** FEATURES *******************/
-#features {
+// none
 
+/**************** MEALS *******************/
+#meals {
+   .meals-showcase {
+      list-style: none;
+      width: 100%;
+
+      li {
+         display: block;
+         float: left;
+         width: 25%; // 4-up
+
+         .meal-pic {
+            width: 100%;
+            margin: 0;
+
+            img {
+               width: 100%;
+               height: auto;
+               transition: all .3s;
+
+               &:hover {
+                  transform: scale(1.1);
+               }
+            }
+         }
+      }
+   }
 }
+
+/**************** HEADER *******************/
+/**************** HEADER *******************/
 /**************** HEADER *******************/
