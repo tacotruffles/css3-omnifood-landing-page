@@ -10,7 +10,7 @@
 html {
   background: white;
   color: #555;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
@@ -19,6 +19,26 @@ html {
 .row {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/**************** COMMON *******************/
+.btn:link, .btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+}
+
+.btn.btn-full:link, .btn.btn-full:visited {
+  color: white;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+}
+
+.btn.btn-outline:link, .btn.btn-outline:visited {
+  color: #e67e22;
+  border: 1px solid #e67e22;
 }
 
 /**************** HEADER *******************/
@@ -31,10 +51,6 @@ header {
   height: 100vh;
 }
 
-header h1 {
-  margin: 0;
-}
-
 header .hero-text-box {
   position: absolute;
   width: 1140px;
@@ -42,6 +58,17 @@ header .hero-text-box {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+header .hero-text-box h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 200%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
 }
 
 /**************** HEADER *******************/

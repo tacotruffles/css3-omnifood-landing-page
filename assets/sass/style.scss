@@ -1,5 +1,10 @@
 /**************** VARIABLES *******************/
 $row-width: 1140px;
+$color-white: white;
+$color-orange:#e67e22;
+$font-family: 'Lato', sans-serif;
+$base-font-size: 20px;
+$base-font-weight: 300;
 
 /**************** RESET *******************/
 * {
@@ -11,9 +16,9 @@ $row-width: 1140px;
 html {
    background: white;
    color: #555;
-   font-family: 'Lato', sans-serif;
-   font-size: 20px;
-   font-weight: 300;
+   font-family: $font-family;
+   font-size: $base-font-size;
+   font-weight: $base-font-weight;
    text-rendering: optimizeLegibility;
 }
 
@@ -21,6 +26,33 @@ html {
 .row {
    max-width: $row-width;
    margin: 0 auto;
+}
+
+/**************** COMMON *******************/
+.btn {
+
+   &:link,
+   &:visited {
+      display: inline-block;
+      padding: 10px 30px;
+      font-weight: 300;
+      text-decoration: none;
+      border-radius: 200px;
+   }
+
+   &.btn-full:link,
+   &.btn-full:visited {
+      color: $color-white;
+      background-color: $color-orange;
+      border: 1px solid $color-orange;
+   }
+
+   &.btn-outline:link,
+   &.btn-outline:visited {
+      color: $color-orange;
+      border: 1px solid $color-orange;
+   }
+
 }
 
 /**************** HEADER *******************/
@@ -31,18 +63,28 @@ header {
    background-repeat: no-repeat;
    height: 100vh;
 
-   h1 {
-      margin: 0;
-   }
-
    .hero-text-box {
       position: absolute;
       width: $row-width;
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
+
+      h1 {
+         margin-top: 0;
+         margin-bottom: 20px;
+         color: $color-white;
+         font-size: 200%;
+         font-weight: 300;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         word-spacing: 4px;
+      }
+
    }
 }
+
+
 
 /**************** HEADER *******************/
 /**************** HEADER *******************/
