@@ -1,8 +1,13 @@
 /**************** VARIABLES *******************/
+// Grid Width
 $row-width: 1140px;
+
+// Colors
 $color-white: white;
 $color-orange:#e67e22;
 $color-orange-dark: #cf6d17;
+
+// Fonts
 $font-family: 'Lato', sans-serif;
 $base-font-size: 20px;
 $base-font-weight: 300;
@@ -30,6 +35,7 @@ html {
 }
 
 /**************** COMMON *******************/
+// Buttons
 .btn {
 
    &:link,
@@ -74,6 +80,41 @@ header {
    background-repeat: no-repeat;
    height: 100vh;
 
+   .logo {
+      height: 100px;
+      width: auto;
+      float: left;
+      margin-top: 20px;
+   }
+
+   .main-nav {
+      float: right;
+      list-style: none;
+      margin-top: 55px;
+      
+      li {
+         display: inline-block;
+         margin-left: 40px;
+
+         a:link, 
+         a:visited {
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 90%;
+            padding: 8px 0px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom .2s;
+
+            &:hover,
+            &:active {
+               
+               border-bottom: 2px solid $color-orange;
+            }
+         }
+      }
+   }
+
    .hero-text-box {
       position: absolute;
       width: $row-width;
@@ -94,8 +135,6 @@ header {
 
    }
 }
-
-
 
 /**************** HEADER *******************/
 /**************** HEADER *******************/

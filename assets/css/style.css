@@ -60,6 +60,42 @@ header {
   height: 100vh;
 }
 
+header .logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+header .main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+header .main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+header .main-nav li a:link,
+header .main-nav li a:visited {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  padding: 8px 0px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom .2s;
+  transition: border-bottom .2s;
+}
+
+header .main-nav li a:link:hover, header .main-nav li a:link:active,
+header .main-nav li a:visited:hover,
+header .main-nav li a:visited:active {
+  border-bottom: 2px solid #e67e22;
+}
+
 header .hero-text-box {
   position: absolute;
   width: 1140px;
