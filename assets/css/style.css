@@ -161,6 +161,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -335,12 +336,40 @@ header .hero-text-box {
 /**************** TESTIMONIALS *******************/
 #testimonials {
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/img/2.jpg) center no-repeat/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/img/2.jpg) center no-repeat/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/assets/img/back-customers.jpg) fixed center no-repeat/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/img/back-customers.jpg) fixed center no-repeat/cover;
 }
 
-#testimonials .box {
-  padding: 50px;
+#testimonials blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+}
+
+#testimonials blockquote:before {
+  position: absolute;
+  top: -5px;
+  left: -6px;
+  content: "\201C";
+  display: block;
+  font-size: 500%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#testimonials blockquote cite {
+  display: block;
+  font-size: 90%;
+  margin-top: 25px;
+}
+
+#testimonials blockquote cite img {
+  height: 50px;
+  width: auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+  vertical-align: middle;
 }
 
 /**************** HEADER *******************/

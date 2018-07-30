@@ -191,6 +191,7 @@ header {
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
+   background-attachment: fixed;
    height: 100vh;
 
    .logo {
@@ -373,10 +374,42 @@ header {
 #testimonials {
 
    color: white;
-   background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(/assets/img/2.jpg) center no-repeat / cover;
+   background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(/assets/img/back-customers.jpg) fixed center no-repeat / cover;
 
+
+   blockquote {
+      padding: 2%;
+      font-style: italic;
+      line-height: 145%;
+      position: relative;
+
+      &:before {
+         position: absolute;
+         top: -5px;
+         left: -6px;
+         content: "\201C";
+         display: block;
+         font-size: 500%;
+         font-family: 'Times New Roman', Times, serif;
+      }
+
+      cite {
+         display: block;
+         font-size: 90%;
+         margin-top: 25px;
+
+         img {
+            height: 50px;
+            width: auto;
+            border: 2px solid $color-white;
+            border-radius: 50%;
+            margin-right: 15px;
+            vertical-align: middle;
+         }
+      }
+   }
    .box {
-      padding: 50px;
+      //padding: 50px;
    }
 
    h2 {
