@@ -373,6 +373,62 @@ header .hero-text-box {
 }
 
 /**************** PRICING *******************/
+#pricing {
+  background-color: #f4f4f4;
+}
+
+#pricing .plan-card {
+  background: white;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  -webkit-box-shadow: 0 2px 2px efefef;
+          box-shadow: 0 2px 2px efefef;
+}
+
+#pricing .plan-card div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+#pricing .plan-card div:last-child {
+  border: 0;
+}
+
+#pricing .plan-card .plan-header {
+  background: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#pricing .plan-card .plan-header .price {
+  color: #e67e22;
+  font-size: 300%;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+#pricing .plan-card .plan-header .price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+#pricing .plan-card .plan-header .meal {
+  font-size: 80%;
+}
+
+#pricing .plan-card .plan-body ul {
+  list-style: none;
+}
+
+#pricing .plan-card .plan-body ul li {
+  padding: 5px 0;
+}
+
+#pricing .plan-card .plan-footer {
+  text-align: center;
+}
+
 /**************** HEADER *******************/
 /**************** HEADER *******************/
 /**************** HEADER *******************/
