@@ -605,6 +605,83 @@ footer {
       width: 80%;
       margin-left: 10%; // Add up 100% width 70% + 2 * 10%
    }
+
+   .icon-small {
+      width: 8%;
+   }
+
+   #how-it-works {
+   
+      .step-box { 
+         .step {
+            margin-top: 10px;
+         }
+
+         .btn-app {
+            display: inline-block;
+            padding-top: 40px;
+         }
+      }
+   }
+
+   #locations {
+   
+      img {
+         width: 100%;
+         height: auto;
+         margin-bottom: 15px;
+      }
+   
+      .location-feature {
+         
+         font-size: 80%;
+         
+         i {
+            color: $color-orange;
+            margin-right: 5px;
+         }
+      }
+   }
+
+   #pricing {
+
+      
+
+      .plan-card {
+         width: 100%;
+
+         .plan-header {
+            .price {
+               font-size: 250%;
+            }
+         }
+
+         .plan-body li {
+            font-size: 85%;
+            i {
+               margin-right: 2px;
+            }
+   
+         }
+      }
+   }
+
+   #contact {
+      form {
+          width: 80%;
+      }
+   }
+
+   footer {
+      .footer-nav li {
+      
+         margin-right: 17px;
+         &:last-child {
+            margin-right: 0px;
+         }
+      }
+   }
+
 }
 
 // Portrait iPad / Landscape SmartPhones - 481px to 767px;

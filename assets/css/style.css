@@ -562,5 +562,48 @@ footer p {
     width: 80%;
     margin-left: 10%;
   }
+  .icon-small {
+    width: 8%;
+  }
+  #how-it-works .step-box .step {
+    margin-top: 10px;
+  }
+  #how-it-works .step-box .btn-app {
+    display: inline-block;
+    padding-top: 40px;
+  }
+  #locations img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  #locations .location-feature {
+    font-size: 80%;
+  }
+  #locations .location-feature i {
+    color: #e67e22;
+    margin-right: 5px;
+  }
+  #pricing .plan-card {
+    width: 100%;
+  }
+  #pricing .plan-card .plan-header .price {
+    font-size: 250%;
+  }
+  #pricing .plan-card .plan-body li {
+    font-size: 85%;
+  }
+  #pricing .plan-card .plan-body li i {
+    margin-right: 2px;
+  }
+  #contact form {
+    width: 80%;
+  }
+  footer .footer-nav li {
+    margin-right: 17px;
+  }
+  footer .footer-nav li:last-child {
+    margin-right: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
