@@ -338,8 +338,12 @@ header .hero-text-box {
 /**************** TESTIMONIALS *******************/
 #testimonials {
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/back-customers.jpg) fixed center no-repeat/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/back-customers.jpg) fixed center no-repeat/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/back-customers.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/back-customers.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #testimonials blockquote {
@@ -648,12 +652,16 @@ footer p {
   #how-it-works .step-box .btn-app {
     display: inline-block;
     padding-top: 20px;
+    padding-right: 20px;
+  }
+  #how-it-works .step-box .btn-app:last-child {
+    padding-right: 0px;
   }
   #how-it-works .step-box .btn-app:link, #how-it-works .step-box .btn-app:visited {
     border: 0;
   }
   #how-it-works .step-box .btn-app img {
-    height: 50px;
+    height: 45px;
     width: auto;
   }
   #how-it-works .app-screen {
