@@ -883,6 +883,11 @@ footer {
 .js--animate-2,
 .js--animate-3 {
     opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--animate-4 {
+    animation-duration: 1s;
 }
 
 .js--animate-1.animated,
