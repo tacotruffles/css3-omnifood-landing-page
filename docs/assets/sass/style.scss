@@ -26,13 +26,14 @@ $base-font-weight: 300;
    &:focus { outline: none; }
 }
 
-html {
+html, body {
    background: white;
    color: #555;
    font-family: $font-family;
    font-size: $base-font-size;
    font-weight: $base-font-weight;
    text-rendering: optimizeLegibility;
+   overflow-x: hidden;
 }
 
 // Initialize Grid Width and Center
@@ -605,14 +606,199 @@ footer {
       width: 80%;
       margin-left: 10%; // Add up 100% width 70% + 2 * 10%
    }
+
+   .icon-small {
+      width: 8%;
+   }
+
+   #how-it-works {
+   
+      .step-box { 
+         .step {
+            margin-top: 10px;
+         }
+
+         .btn-app {
+            display: inline-block;
+            padding-top: 40px;
+         }
+      }
+   }
+
+   #locations {
+   
+      img {
+         width: 100%;
+         height: auto;
+         margin-bottom: 15px;
+      }
+   
+      .location-feature {
+         
+         font-size: 80%;
+         
+         i {
+            color: $color-orange;
+            margin-right: 5px;
+         }
+      }
+   }
+
+   #pricing {
+
+      
+
+      .plan-card {
+         width: 100%;
+
+         .plan-header {
+            .price {
+               font-size: 250%;
+            }
+         }
+
+         .plan-body li {
+            font-size: 85%;
+            i {
+               margin-right: 2px;
+            }
+   
+         }
+      }
+   }
+
+   #contact {
+      form {
+          width: 80%;
+      }
+   }
+
+   footer {
+      .footer-nav li {
+      
+         margin-right: 17px;
+         &:last-child {
+            margin-right: 0px;
+         }
+      }
+   }
+
 }
 
 // Portrait iPad / Landscape SmartPhones - 481px to 767px;
 @media only screen and (max-width: 767px) {
+   body { font-size: 16px;}
+   section { padding: 30px 0; }
+   .row, header .hero-text-box {padding: 0 4%;}
+   .col {
+      width: 100%;
+      margin: 0 0 4% 0;
+   }
 
+   h1 { font-size: 180%; }
+   h2 { font-size: 150%; }
+
+   .lead {
+      width: 100%;
+      margin-left: 0;
+   }
+
+   .main-nav {
+      display: none;
+   }
+
+   #features {
+      h2, h3, p {
+         text-align: center;
+      }
+
+      p {
+         margin-bottom: 26px;
+      }
+   }
+
+   #how-it-works {
+      .step-box {
+
+        
+
+        &:first-child {
+            width: 100%;
+            text-align: center !important;
+        }
+
+         .btn-app {
+      
+            display: inline-block;
+            padding-top: 20px;
+   
+            &:link,
+            &:visited {
+               border: 0;
+            }
+   
+            img {
+               height: 50px;
+               width: auto;
+            }
+         }
+      }
+   
+      .app-screen {
+         width: 40%;
+         height: auto;
+         margin-bottom: 15px;
+      }
+   
+      .step {
+         margin-top: 35px;
+   
+         // Step number
+         div {
+            
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            padding: 6px;
+            float: left;
+            font-size: 120%; 
+            margin-right: 15px;
+         }
+         
+         p {
+            font-size: 90%;
+         }
+         
+      }
+   }
+   #pricing {
+      .plan-card {
+         margin-left: 0;
+      }
+   }
 }
 
 // Portrait SmartPhones - 0px to 480px
 @media only screen and (max-width: 480px) {
 
+   #how-it-works {
+      .step-box {
+         &:last-child {
+            text-align: center !important;
+         }
+      }
+   }
+
+   #testimonials {
+      blockquote {
+         margin-top: 35px;
+      }
+   }
+
+   #contact {
+      form {
+          width: 100%;
+      }
+   }
 }

@@ -11,13 +11,14 @@
   outline: none;
 }
 
-html {
+html, body {
   background: white;
   color: #555;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .row {
@@ -561,6 +562,135 @@ footer p {
   .lead {
     width: 80%;
     margin-left: 10%;
+  }
+  .icon-small {
+    width: 8%;
+  }
+  #how-it-works .step-box .step {
+    margin-top: 10px;
+  }
+  #how-it-works .step-box .btn-app {
+    display: inline-block;
+    padding-top: 40px;
+  }
+  #locations img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  #locations .location-feature {
+    font-size: 80%;
+  }
+  #locations .location-feature i {
+    color: #e67e22;
+    margin-right: 5px;
+  }
+  #pricing .plan-card {
+    width: 100%;
+  }
+  #pricing .plan-card .plan-header .price {
+    font-size: 250%;
+  }
+  #pricing .plan-card .plan-body li {
+    font-size: 85%;
+  }
+  #pricing .plan-card .plan-body li i {
+    margin-right: 2px;
+  }
+  #contact form {
+    width: 80%;
+  }
+  footer .footer-nav li {
+    margin-right: 17px;
+  }
+  footer .footer-nav li:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .row, header .hero-text-box {
+    padding: 0 4%;
+  }
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  .lead {
+    width: 100%;
+    margin-left: 0;
+  }
+  .main-nav {
+    display: none;
+  }
+  #features h2, #features h3, #features p {
+    text-align: center;
+  }
+  #features p {
+    margin-bottom: 26px;
+  }
+  #how-it-works .step-box:first-child {
+    width: 100%;
+    text-align: center !important;
+  }
+  #how-it-works .step-box .btn-app {
+    display: inline-block;
+    padding-top: 20px;
+  }
+  #how-it-works .step-box .btn-app:link, #how-it-works .step-box .btn-app:visited {
+    border: 0;
+  }
+  #how-it-works .step-box .btn-app img {
+    height: 50px;
+    width: auto;
+  }
+  #how-it-works .app-screen {
+    width: 40%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  #how-it-works .step {
+    margin-top: 35px;
+  }
+  #how-it-works .step div {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 6px;
+    float: left;
+    font-size: 120%;
+    margin-right: 15px;
+  }
+  #how-it-works .step p {
+    font-size: 90%;
+  }
+  #pricing .plan-card {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #how-it-works .step-box:last-child {
+    text-align: center !important;
+  }
+  #testimonials blockquote {
+    margin-top: 35px;
+  }
+  #contact form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
