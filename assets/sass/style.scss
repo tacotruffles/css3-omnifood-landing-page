@@ -8,6 +8,7 @@ $color-white-darken: #f4f4f4;
 $color-orange:#e67e22;
 $color-orange-dark: #cf6d17;
 $color-gray-dark: #555;
+$color-gray-dark-2: #333;
 $color-gray-medium: #ccc;
 $color-gray-light: #fcfcfc;
 
@@ -413,13 +414,7 @@ header {
          }
       }
    }
-   .box {
-      //padding: 50px;
-   }
-
-   h2 {
-      
-   }
+   
 }
 
 /**************** PRICING *******************/
@@ -512,7 +507,72 @@ header {
 
    
 }
-/**************** HEADER *******************/
-/**************** HEADER *******************/
+/**************** FOOTER *******************/
+footer {
+   background: $color-gray-dark-2;
+   color: #888;
+   padding: 30px;
+   font-size: 80%;
+
+   .footer-nav {
+      list-style: none;
+      float: left;
+   }
+
+   .social-links {
+      list-style: none;
+      float: right;
+   }
+
+   .footer-nav li, .social-links li {
+      display: inline-block;
+      margin-right: 20px;
+
+      &:last-child {
+         margin-right: 0px;
+      }
+
+      a:link,
+      a:visited {
+         text-decoration: none;
+         border: 0;
+         color: #888;
+         transition: color .2s;
+
+         // Increase icon sizes
+         &.facebook, 
+         &.twitter,
+         &.instagram,
+         &.youtube {
+            font-size: 140%;
+         }
+      }
+
+      a:hover,
+      a:active {
+         color: #ddd;
+         
+         &.facebook {
+            color: #3b5998 !important;
+         }
+
+         &.twitter {
+            color: #55acee !important;
+         }
+
+         &.instagram {
+            color: #FBCD6A !important;
+         }
+
+         &.youtube {
+            color: #ff0000 !important;
+         }
+      }
+   }
+   p {
+      text-align: center;
+      margin-top: 20px;
+   }
+}
 
 /**************** MEDIA QUERIES *******************/
