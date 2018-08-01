@@ -1,0 +1,519 @@
+/**************** VARIABLES *******************/
+// Grid Width
+$row-width: 1140px;
+
+// Colors
+$color-white: white;
+$color-white-darken: #f4f4f4;
+$color-orange:#e67e22;
+$color-orange-dark: #cf6d17;
+$color-gray-dark: #555;
+$color-gray-medium: #ccc;
+$color-gray-light: #fcfcfc;
+
+// Fonts
+$font-family: 'Lato', sans-serif;
+$base-font-size: 20px;
+$base-font-weight: 300;
+
+/**************** RESET *******************/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+   &:focus { outline: none; }
+}
+
+html {
+   background: white;
+   color: #555;
+   font-family: $font-family;
+   font-size: $base-font-size;
+   font-weight: $base-font-weight;
+   text-rendering: optimizeLegibility;
+}
+
+// Initialize Grid Width and Center
+.row {
+   max-width: $row-width;
+   margin: 0 auto;
+}
+
+// Clear fix 
+.clearfix {
+   zoom: 1;
+
+   &:after {
+      content: '.';
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+   }
+}
+
+/**************** COMMON *******************/
+// Buttons
+.btn, input[type=submit] {
+
+   &, //.btn class (for <button> element above)
+   &:link,
+   &:visited {
+      display: inline-block;
+      padding: 10px 30px;
+      font-weight: 300;
+      text-decoration: none;
+      border-radius: 200px;
+      transition: all .2s;
+      margin-right: 15px;
+   }
+
+   &:hover,
+   &:active {
+      color: $color-white !important;
+      background-color: $color-orange-dark !important;
+      border: 1px solid $color-orange !important;
+   }
+
+   &.btn-full,
+   &.btn-full:link,
+   &.btn-full:visited {
+      color: $color-white;
+      background-color: $color-orange;
+      border: 1px solid $color-orange;
+   }
+
+   &.btn-outline,
+   &.btn-outline:link,
+   &.btn-outline:visited {
+      color: $color-orange;
+      border: 1px solid $color-orange;
+   }
+}
+
+// Heading
+h1,h2,h3,h4,h5,h6 {
+   font-weight: 300;
+   text-transform: uppercase;
+}
+
+h1 {
+   margin-top: 0;
+   margin-bottom: 20px;
+   color: $color-white;
+   font-size: 200%;
+   letter-spacing: 1px;
+   word-spacing: 4px;
+}
+
+h2 {
+   font-size: 180%;
+   word-spacing: 2px;
+   text-align: center;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+
+   &::after {
+      display: block;
+      height: 2px;
+      background-color: $color-orange;
+      content: "";
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 30px;
+   }
+}
+
+h3 {
+   font-size: 110%;
+   margin-bottom: 15px;
+}
+
+// Links
+a:link,
+a:visited {
+   color: $color-orange;
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
+   transition: all .3s;
+}
+
+a:hover,
+a:active {
+   text-decoration: none;
+   color: $color-gray-dark;
+   border-bottom: 1px solid $color-gray-dark;
+}
+
+// Content
+.lead {
+   line-height: 145%;
+   width: 70%;
+   margin-left: 15%; // Add up 100% width 70% + 2 * 15%
+}
+
+// Sections / Grid
+section {
+   padding: 80px 0;
+}
+
+.box {
+   padding: 1%;
+
+   p {
+      font-size: 90%;
+      line-height: 145%;
+   }
+}
+
+// Icons
+.icon-big {
+   display: block;
+
+   color: $color-orange;
+   font-size: 350%;
+   text-align: center;
+
+   margin-bottom: 20px;
+}
+
+.icon-small {
+   display: inline-block;
+   width: 30px;
+   text-align: center;
+   color: $color-orange;
+   font-size: 120%;
+   margin-right: 10px;
+
+   // Method 1: didn't work
+   line-height: 120%;
+   vertical-align: middle;
+   margin-top: -5px;
+}
+
+/**************** HEADER *******************/
+header {
+   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) , url(/assets/css/img/hero.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: 100vh;
+
+   .logo {
+      height: 100px;
+      width: auto;
+      float: left;
+      margin-top: 20px;
+   }
+
+   .main-nav {
+      float: right;
+      list-style: none;
+      margin-top: 55px;
+      
+      li {
+         display: inline-block;
+         margin-left: 40px;
+
+         a:link, 
+         a:visited {
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 90%;
+            padding: 8px 0px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom .2s;
+
+            &:hover,
+            &:active {
+               
+               border-bottom: 2px solid $color-orange;
+            }
+         }
+      }
+   }
+
+   .hero-text-box {
+      position: absolute;
+      width: $row-width;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
+}
+
+/**************** FEATURES *******************/
+#features {
+   .lead {
+      margin-bottom: 35px;
+   }
+}
+
+/**************** MEALS *******************/
+#meals {
+   padding: 0;
+
+   .meals-showcase {
+      list-style: none;
+      width: 100%;
+
+      li {
+         display: block;
+         float: left;
+         width: 25%; // 4-up
+
+         .meal-pic {
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+
+            img {
+               
+               opacity: .7;
+               width: 100%;
+               height: auto;
+               transform: scale(1.15);
+               transition: all .5s;
+
+               &:hover {
+                  opacity: 1;
+                  transform: scale(1.05);
+               }
+            }
+         }
+      }
+   }
+}
+
+/**************** HOW IT WORKS *******************/
+#how-it-works {
+
+   background-color: $color-white-darken;
+
+   .step-box {
+      &:first-child {
+         width: 35%;
+         text-align: right;
+         padding-right: 3%;
+      }
+
+      &:last-child {
+         padding-left: 3%;
+      }
+
+      .btn-app {
+         display: inline-block;
+         padding-top: 80px;
+
+         &:link,
+         &:visited {
+            border: 0;
+         }
+
+         img {
+            height: 50px;
+            width: auto;
+         }
+      }
+   }
+
+   .app-screen {
+      width: 70%;
+      height: auto;
+   }
+
+   .step {
+      margin-top: 35px;
+
+      // Step number
+      div {
+         display: inline-block;
+         color: $color-orange;
+         border: 2px solid $color-orange;
+         border-radius: 50%;
+         height: 55px;
+         width: 55px;
+         text-align: center;
+         padding: 9px;
+         float: left;
+         font-size: 150%; 
+         margin-right: 25px;
+      }
+
+      p {
+         padding-top: 5px;
+
+         &:last-of-type {
+            padding-bottom: 5px;
+         }
+      }
+      
+   }
+}
+/**************** LOCATIONS *******************/
+#locations {
+
+   // h3 {
+   //    font-weight: 500;
+   // }
+
+   img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+   }
+
+   .location-feature {
+      margin-bottom: 5px;
+
+      i {
+         color: $color-orange;
+         margin-right: 5px;
+      }
+   }
+}
+/**************** TESTIMONIALS *******************/
+#testimonials {
+
+   color: white;
+   background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(/assets/img/back-customers.jpg) fixed center no-repeat / cover;
+
+
+   blockquote {
+      padding: 2%;
+      font-style: italic;
+      line-height: 145%;
+      position: relative;
+
+      &:before {
+         position: absolute;
+         top: -5px;
+         left: -6px;
+         content: "\201C";
+         display: block;
+         font-size: 500%;
+         font-family: 'Times New Roman', Times, serif;
+      }
+
+      cite {
+         display: block;
+         font-size: 90%;
+         margin-top: 25px;
+
+         img {
+            height: 50px;
+            width: auto;
+            border: 2px solid $color-white;
+            border-radius: 50%;
+            margin-right: 15px;
+            vertical-align: middle;
+         }
+      }
+   }
+   .box {
+      //padding: 50px;
+   }
+
+   h2 {
+      
+   }
+}
+
+/**************** PRICING *******************/
+#pricing {
+   background-color: $color-white-darken;
+
+   .plan-card {
+      background: $color-white;
+      border-radius: 5px;
+      width: 90%;
+      margin-left: 5%; // Center: Add 2x + 90 to get 100% 
+      
+      box-shadow: 0 2px 2px efefef;
+
+      div {
+         padding: 15px;
+         border-bottom: 1px solid #e8e8e8;
+
+         &:last-child {
+            border: 0;
+         }
+      }
+
+      .plan-header {
+         background: $color-gray-light;
+         border-top-left-radius: 5px;
+         border-top-right-radius: 5px;
+         
+         .price {
+            color: $color-orange;
+            font-size: 300%;
+            font-weight: 200;
+            margin-bottom: 10px;
+
+            span {
+               font-size: 30%;
+               font-weight: 300;
+            }
+         }
+
+         .meal {
+            font-size: 80%;
+         }
+      }
+
+      .plan-body {
+
+         ul {
+            list-style: none;
+
+            li {
+               padding: 5px 0;
+            }
+         }
+      }
+
+      .plan-footer {
+         text-align: center;
+      }
+   }
+}
+
+/**************** CONTACT *******************/
+#contact {
+   form {
+       width: 60%;
+       margin: 0 auto;
+   }
+
+   input[type=text],
+   input[type=email],
+   select,
+   textarea {
+       width: 100%;
+       padding: 7px;
+       border-radius: 3px;
+       border: 1px solid $color-gray-medium;
+
+       font-weight: 300;
+       font-size: 90%;
+   }
+
+   textarea {
+      height: 100px;
+   }
+
+   input[type=checkbox] {
+      margin: 10px 5px 10px 0px;
+   }
+
+   
+}
+/**************** HEADER *******************/
+/**************** HEADER *******************/
+
+/**************** MEDIA QUERIES *******************/
