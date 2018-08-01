@@ -283,7 +283,7 @@ header {
         li {
             a:link, 
             a:visited {
-                padding: 15px 0;
+                padding: 12px 0;
                 color: $color-gray-dark;
             }
         }
@@ -876,4 +876,17 @@ footer {
           width: 100%;
       }
    }
+}
+
+/********************* ANIMATIONS **********************/
+.js--animate-1,
+.js--animate-2,
+.js--animate-3 {
+    opacity: 0;
+}
+
+.js--animate-1.animated,
+.js--animate-2.animated,
+.js--animate-3.animated {
+    opacity: 1;
 }

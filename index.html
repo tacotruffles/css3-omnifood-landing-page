@@ -12,29 +12,34 @@
     <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body id="home">
 
     <!-- header -->
     <header>
         <nav>
             <div class="row">
-                <img class="logo" src="assets/img/logo-white.png" alt="OmniFood: Premium Food Delivery">
-                <img class="logo-black" src="assets/img/logo.png" alt="OmniFood: Premium Food Delivery">
+                <a href="#home">
+                    <img class="logo" src="assets/img/logo-white.png" alt="OmniFood: Premium Food Delivery">
+                    <img class="logo-black" src="assets/img/logo.png" alt="OmniFood: Premium Food Delivery">
+                </a>
+
+
                 <ul class="main-nav">
                     <li>
-                        <a href="#">Food delivery</a>
+                        <a href="#features">Food delivery</a>
                     </li>
                     <li>
-                        <a href="#">How it works</a>
+                        <a href="#how-it-works">How it works</a>
                     </li>
                     <li>
-                        <a href="#">Our cities</a>
+                        <a href="#locations">Our cities</a>
                     </li>
                     <li>
-                        <a href="#">Sign up</a>
+                        <a href="#pricing">Sign up</a>
                     </li>
                 </ul>
             </div>
@@ -42,8 +47,8 @@
         <div class="hero-text-box">
             <h1>Goodbye junk food.
                 <br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-outline" href="#">Show me more</a>
+            <a class="btn btn-full" href="#pricing">I’m hungry</a>
+            <a class="btn btn-outline" href="#features">Show me more</a>
         </div>
     </header>
     <!-- end header -->
@@ -56,7 +61,7 @@
                 So let us take care of that, we’re really good at it, we promise!
             </p>
         </div>
-        <div class="row">
+        <div class="row js--animate-1">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-infinite-outline icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -143,7 +148,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-2 step-box">
-                <img class="app-screen" src="assets/img/app-iPhone.png" alt="OmniFood is available as a mobile app">
+                <img class="app-screen js--animate-2" src="assets/img/app-iPhone.png" alt="OmniFood is available as a mobile app">
             </div>
             <div class="col span-1-of-2 step-box">
                 <div class="step">
@@ -178,7 +183,7 @@
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--animate-3">
             <div class="col span-1-of-4 box">
                 <img src="assets/img/lisbon-3.jpg" alt="">
                 <h3>Lisbon</h3>
@@ -280,7 +285,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-card">
+                <div class="plan-card js--animate-4">
                     <div class="plan-header">
                         <h3>Premium</h3>
                         <p class="price">$399

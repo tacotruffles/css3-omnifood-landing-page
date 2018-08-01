@@ -254,7 +254,7 @@ header .sticky-nav .main-nav {
 
 header .sticky-nav .main-nav li a:link,
 header .sticky-nav .main-nav li a:visited {
-  padding: 15px 0;
+  padding: 12px 0;
   color: #555;
 }
 
@@ -762,5 +762,18 @@ footer p {
   #contact form {
     width: 100%;
   }
+}
+
+/********************* ANIMATIONS **********************/
+.js--animate-1,
+.js--animate-2,
+.js--animate-3 {
+  opacity: 0;
+}
+
+.js--animate-1.animated,
+.js--animate-2.animated,
+.js--animate-3.animated {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
