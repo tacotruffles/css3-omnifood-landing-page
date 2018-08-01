@@ -194,7 +194,7 @@ section {
 
 /**************** HEADER *******************/
 header {
-   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) , url(/assets/css/img/hero.jpg);
+   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) , url(../css/img/hero.jpg);
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
@@ -380,8 +380,7 @@ header {
 #testimonials {
 
    color: white;
-   background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(/assets/img/back-customers.jpg) fixed center no-repeat / cover;
-
+   background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(../img/back-customers.jpg) fixed center no-repeat / cover;
 
    blockquote {
       padding: 2%;
