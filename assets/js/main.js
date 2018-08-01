@@ -52,7 +52,7 @@ $(document).ready(function() {
   // #how-it-works
   $(".js--animate-2").waypoint(
     function(direction) {
-      $(".js--animate-2").addClass("animated fadeInUp");
+      $(".js--animate-2").addClass("animated fadeInLeft");
     },
     {
       offset: "50%"
