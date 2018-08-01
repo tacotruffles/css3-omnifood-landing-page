@@ -576,3 +576,43 @@ footer {
 }
 
 /**************** MEDIA QUERIES *******************/
+
+// Landscape iPad / Desktop Computers - 1024px to largest screen size;
+@media only screen and (max-width: 1200px) {
+
+   // Common
+   .row {
+      padding: 0 2%;
+   }
+
+   header {
+      .hero-text-box {
+         width: 100%;
+         padding: 0 2%;
+      }
+   }
+}
+
+// Portait iPad / Landscape iPad - 767px to 1023px;
+@media only screen and (max-width: 1023px) {
+   body {
+      font-size: 18px;
+   }
+
+   section { padding: 60px 0;}
+
+   .lead {
+      width: 80%;
+      margin-left: 10%; // Add up 100% width 70% + 2 * 10%
+   }
+}
+
+// Portrait iPad / Landscape SmartPhones - 481px to 767px;
+@media only screen and (max-width: 767px) {
+
+}
+
+// Portrait SmartPhones - 0px to 480px
+@media only screen and (max-width: 480px) {
+
+}
