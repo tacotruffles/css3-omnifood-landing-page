@@ -210,10 +210,19 @@ header {
       margin-top: 20px;
    }
 
+   .logo-black {
+       display: none;
+   }
+
+   .logo {
+       display: block;
+   }
+
    .main-nav {
       float: right;
       list-style: none;
       margin-top: 55px;
+      transition: all .5s ease-out;
       
       li {
          display: inline-block;
@@ -245,8 +254,42 @@ header {
       left: 50%;
       transform: translate(-50%,-50%);
    }
-}
 
+   .sticky-nav {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       background: rgba(255, 255, 255, .98);
+       box-shadow: 0px 2px 0px #eee;
+       z-index: 9999;
+
+       .logo-black {
+            display: block;
+            height: 45px;
+            width: auto;
+            float: left;
+            margin: 5px 0;
+       }
+
+       .logo {
+           display: none;
+       }
+
+       .main-nav {
+
+        margin-top: 19px;
+        
+        li {
+            a:link, 
+            a:visited {
+                padding: 15px 0;
+                color: $color-gray-dark;
+            }
+        }
+     }
+   }
+}
 /**************** FEATURES *******************/
 #features {
    .lead {
@@ -431,7 +474,10 @@ header {
       border-radius: 5px;
       width: 90%;
       margin-left: 5%; // Center: Add 2x + 90 to get 100% 
-      
+      &:first-child {
+          margin-left: 0;
+      }
+
       box-shadow: 0 2px 2px efefef;
 
       div {
@@ -724,15 +770,25 @@ footer {
    #how-it-works {
       .step-box {
 
-        
-
+    
         &:first-child {
+            padding: 0;
             width: 100%;
             text-align: center !important;
         }
+      
+        &:last-child {
+            padding: 0;
+            width: 70%;
+            margin-left: 15%;
+            
+            .app-button-align {
+                text-align: center !important;
+            }
+        }
 
          .btn-app {
-      
+            
             display: inline-block;
             padding-top: 20px;
             padding-right: 20px;
@@ -747,7 +803,7 @@ footer {
             }
    
             img {
-               height: 45px;
+               height: 40px;
                width: auto;
             }
          }
@@ -781,11 +837,7 @@ footer {
          
       }
    }
-   #pricing {
-      .plan-card {
-         margin-left: 0;
-      }
-   }
+
 }
 
 // Portrait SmartPhones - 0px to 480px
@@ -793,9 +845,23 @@ footer {
 
    #how-it-works {
       .step-box {
-         &:last-child {
-            text-align: center !important;
-         }
+
+        &:first-child {
+            padding: 0;
+        }
+
+        &:last-child {
+            padding: 0;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .btn-app {
+            img {
+                height: 45px;
+                width: auto;
+             }
+        }
       }
    }
 
