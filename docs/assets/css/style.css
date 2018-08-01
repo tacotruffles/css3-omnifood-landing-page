@@ -456,7 +456,111 @@ header .hero-text-box {
   margin: 10px 5px 10px 0px;
 }
 
-/**************** HEADER *******************/
-/**************** HEADER *******************/
+/**************** FOOTER *******************/
+footer {
+  background: #333;
+  color: #888;
+  padding: 30px;
+  font-size: 80%;
+}
+
+footer .footer-nav {
+  list-style: none;
+  float: left;
+}
+
+footer .social-links {
+  list-style: none;
+  float: right;
+}
+
+footer .footer-nav li, footer .social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer .footer-nav li:last-child, footer .social-links li:last-child {
+  margin-right: 0px;
+}
+
+footer .footer-nav li a:link,
+footer .footer-nav li a:visited, footer .social-links li a:link,
+footer .social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+footer .footer-nav li a:link.facebook, footer .footer-nav li a:link.twitter, footer .footer-nav li a:link.instagram, footer .footer-nav li a:link.youtube,
+footer .footer-nav li a:visited.facebook,
+footer .footer-nav li a:visited.twitter,
+footer .footer-nav li a:visited.instagram,
+footer .footer-nav li a:visited.youtube, footer .social-links li a:link.facebook, footer .social-links li a:link.twitter, footer .social-links li a:link.instagram, footer .social-links li a:link.youtube,
+footer .social-links li a:visited.facebook,
+footer .social-links li a:visited.twitter,
+footer .social-links li a:visited.instagram,
+footer .social-links li a:visited.youtube {
+  font-size: 140%;
+}
+
+footer .footer-nav li a:hover,
+footer .footer-nav li a:active, footer .social-links li a:hover,
+footer .social-links li a:active {
+  color: #ddd;
+}
+
+footer .footer-nav li a:hover.facebook,
+footer .footer-nav li a:active.facebook, footer .social-links li a:hover.facebook,
+footer .social-links li a:active.facebook {
+  color: #3b5998 !important;
+}
+
+footer .footer-nav li a:hover.twitter,
+footer .footer-nav li a:active.twitter, footer .social-links li a:hover.twitter,
+footer .social-links li a:active.twitter {
+  color: #55acee !important;
+}
+
+footer .footer-nav li a:hover.instagram,
+footer .footer-nav li a:active.instagram, footer .social-links li a:hover.instagram,
+footer .social-links li a:active.instagram {
+  color: #FBCD6A !important;
+}
+
+footer .footer-nav li a:hover.youtube,
+footer .footer-nav li a:active.youtube, footer .social-links li a:hover.youtube,
+footer .social-links li a:active.youtube {
+  color: #ff0000 !important;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 20px;
+}
+
 /**************** MEDIA QUERIES *******************/
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 2%;
+  }
+  header .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .lead {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
