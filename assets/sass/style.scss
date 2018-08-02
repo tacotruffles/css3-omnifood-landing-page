@@ -208,10 +208,13 @@ header {
       width: auto;
       float: left;
       margin-top: 20px;
+      transition: all .5s;
    }
 
    .logo-black {
        display: none;
+       opacity: 0;
+       transition: all .5s;
    }
 
    .logo {
@@ -222,7 +225,7 @@ header {
       float: right;
       list-style: none;
       margin-top: 55px;
-      transition: all .5s ease-out;
+      transition: all .5s;
       
       li {
          display: inline-block;
@@ -266,6 +269,7 @@ header {
 
        .logo-black {
             display: block;
+            opacity: 1;
             height: 45px;
             width: auto;
             float: left;

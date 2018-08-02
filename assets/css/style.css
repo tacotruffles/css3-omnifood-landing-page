@@ -175,10 +175,15 @@ header .logo {
   width: auto;
   float: left;
   margin-top: 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 header .logo-black {
   display: none;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 header .logo {
@@ -189,8 +194,8 @@ header .main-nav {
   float: right;
   list-style: none;
   margin-top: 55px;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 header .main-nav li {
@@ -238,6 +243,7 @@ header .sticky-nav {
 
 header .sticky-nav .logo-black {
   display: block;
+  opacity: 1;
   height: 45px;
   width: auto;
   float: left;
