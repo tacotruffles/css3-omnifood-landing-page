@@ -175,10 +175,15 @@ header .logo {
   width: auto;
   float: left;
   margin-top: 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 header .logo-black {
   display: none;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 header .logo {
@@ -189,8 +194,8 @@ header .main-nav {
   float: right;
   list-style: none;
   margin-top: 55px;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 header .main-nav li {
@@ -216,6 +221,20 @@ header .main-nav li a:visited:active {
   border-bottom: 2px solid #e67e22;
 }
 
+header .nav-toggler {
+  display: none;
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+}
+
+header .nav-toggler i {
+  font-size: 200%;
+  color: white;
+}
+
 header .hero-text-box {
   position: absolute;
   width: 1140px;
@@ -238,6 +257,7 @@ header .sticky-nav {
 
 header .sticky-nav .logo-black {
   display: block;
+  opacity: 1;
   height: 45px;
   width: auto;
   float: left;
@@ -683,8 +703,67 @@ footer p {
     width: 100%;
     margin-left: 0;
   }
-  .main-nav {
+  header .main-nav {
     display: none;
+    float: left;
+    margin-top: 35px;
+    margin-left: 5px;
+  }
+  header .main-nav li {
+    display: block;
+  }
+  header .main-nav li a:link,
+  header .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+  header .main-nav li a:link:hover, header .main-nav li a:link:active,
+  header .main-nav li a:visited:hover,
+  header .main-nav li a:visited:active {
+    border: 0;
+  }
+  header .nav-toggler {
+    display: inline-block;
+  }
+  header .sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0px 2px 0px #eee;
+            box-shadow: 0px 2px 0px #eee;
+    z-index: 9999;
+  }
+  header .sticky-nav .nav-toggler {
+    margin-top: 10px;
+  }
+  header .sticky-nav .nav-toggler i {
+    color: #555;
+  }
+  header .sticky-nav .logo-black {
+    display: block;
+    opacity: 1;
+    height: 45px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+  }
+  header .sticky-nav .logo {
+    display: none;
+  }
+  header .sticky-nav .main-nav {
+    margin-top: 3px;
+  }
+  header .sticky-nav .main-nav li {
+    margin-left: 20px;
+  }
+  header .sticky-nav .main-nav li a:link,
+  header .sticky-nav .main-nav li a:visited {
+    padding: 10px 0;
+    color: #555;
   }
   #features h2, #features h3, #features p {
     text-align: center;
